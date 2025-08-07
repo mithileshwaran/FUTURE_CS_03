@@ -1,5 +1,5 @@
 Setup Instructions 
-1 Install Python
+- 1) Install Python
 
     Download and install Python from: https://www.python.org/downloads/
 
@@ -9,7 +9,7 @@ Setup Instructions
 
     python --version
 
-2 Fix PIP if Not Found
+- 2) Fix PIP if Not Found
 
     If you see error like 'pip' is not recognized, reinstall Python and make sure “Add to PATH” is ticked.
 
@@ -17,7 +17,7 @@ Setup Instructions
 
     pip --version
 
-3 Install Required Libraries
+- 3) Install Required Libraries
 
 In the same folder as your project, open Command Prompt and run:
 
@@ -25,7 +25,7 @@ pip install flask
 pip install pycryptodome
 
 These will install Flask (for web server) and PyCryptodome (for AES encryption).
-4  Create Project Folder Structure
+- 4)  Create Project Folder Structure
 
 You can use VS Code or any editor. Create the folder like this:
 
@@ -38,7 +38,7 @@ secure_file_share/
     ├── encrypted/
     └── decrypted/
 
-5 Run Your Project
+- 5) Run Your Project
 
 In Command Prompt, go to your project folder:
 
@@ -58,7 +58,7 @@ You should see something like this:
 This means the Flask server is running successfully on your local machine.
 What to do next?
 
-6 Open in Browser
+- 6) Open in Browser
 
 After running the command above, open:
 
