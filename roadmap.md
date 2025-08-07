@@ -1,4 +1,4 @@
-Setup Instructions (Easy Steps for Beginners)
+Setup Instructions 
 1 Install Python
 
     Download and install Python from: https://www.python.org/downloads/
