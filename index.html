@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>🔐 Secure File Sharing</title>
+</head>
+<body>
+    <h1>📤 Upload a File</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Encrypt & Upload</button>
+    </form>
+
+    <hr>
+
+    <h2>📁 Encrypted Files Available</h2>
+    {% if files %}
+        <ul>
+            {% for file in files %}
+                <li>
+                    {{ file }} —
+                    <a href="{{ url_for('download', filename=file) }}">🔓 Decrypted</a> |
+                    <a href="{{ url_for('download_encrypted', filename=file) }}">🔐 Encrypted</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No encrypted files yet.</p>
+    {% endif %}
+</body>
+</html>
+
